@@ -25,6 +25,7 @@ contract Voting{
     error notOwner();
     error candidateAlreadyExist();
     error alreadyVoted();
+    error CandidateNotExist();
 
     event VoteCast(address, string);
 
@@ -57,6 +58,11 @@ contract Voting{
         if (userVoted[msg.sender]) {
             revert alreadyVoted();
         }
+
+        if(!candidateExist[_name]){
+            revert CandidateNotExist();
+        }
+        
         uint index = candidateIndex[_name];
         candidates[index].voteCount++;
         userVoted[msg.sender] = true;
