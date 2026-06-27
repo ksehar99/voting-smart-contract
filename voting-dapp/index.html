@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting DApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>  <!-- Ethers.js library(online) for interacting with Ethereum blockchain-->
+    <script src="app.js" defer></script>
+</head>
+
+
+<body>
+    <h1>Voting DApp</h1>
+
+    <div id="owner-section">
+        <h2>Owner Panel</h2>
+        <input type="text" id="candidateName" placeholder="Candidate name">
+        <button id="addBtn" onclick="addCandidate()">Add Candidate</button>
+    </div>
+
+
+    <div id="voter-section">
+        <h2>Voter Panel</h2>
+        <button id="connectBtn" onclick="connectWallet()">Connect Wallet</button>
+        <div id="candidatesList">
+            <!-- candidates yahan aayenge JS se -->
+        </div>
+    </div>
+
+
+    <div id="results-section">
+        <h2>Results</h2>
+        <div id="winner">
+        <!-- winner yahan aayega -->
+        </div>
+        <div id="resultsList">
+            <!-- sare candidates votes ke saath yahan -->
+        </div>
+    </div>
+
+</body>
+</html>
