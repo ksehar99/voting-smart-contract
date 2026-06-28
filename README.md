@@ -49,6 +49,10 @@ A minimal frontend was also built using HTML, CSS, and Ethers.js to understand h
 - Sepolia Testnet + faucet
 - VS Code + Live Server
 
+## Live Server
+<img width="944" height="428" alt="Screenshot 2026-06-28 115203" src="https://github.com/user-attachments/assets/e97fa239-df06-4e26-9fc1-bb16b10526b1" />
+<img width="934" height="428" alt="image" src="https://github.com/user-attachments/assets/31c2596a-1d5c-4533-aab9-24e5f1015c65" />
+
 ## Next Steps
 - Fix case sensitivity — normalize candidate names to lowercase
 - Add voting deadline — time-based access control in SC
